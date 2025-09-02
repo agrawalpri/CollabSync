@@ -1,6 +1,6 @@
-# CollabSync-A-Task-Managing-platform-with-teams-
+# CollabSync(A Task Managing platform with teams)
 
-Full stack project using MERN
+Full stack project using MERN </br>
 What it does? </br>
 
 1. User Dashboard – View assigned tasks, track progress, and get task insights.
