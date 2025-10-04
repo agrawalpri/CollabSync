@@ -1,10 +1,13 @@
 const { text } = require("express");
 const mongoose = require("mongoose");
 const { create } = require("./User");
+
 const todoSchema = new mongoose.Schema({
   text: { type: String, required: true },
   completed: { type: Boolean, default: false },
 });
+
+
 const taskSchema = new mongoose.Schema(
   {
     title: { type: String, required: true },
