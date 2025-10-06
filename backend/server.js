@@ -1,28 +1,25 @@
 // const dotenv = require("dotenv");
 // dotenv.config(); // must be called at the top
 
- require("dotenv").config();
+require("dotenv").config();
 const express = require("express");
+const app = express();
+
 const cors = require("cors");
 const path = require("path");
 const connectDB = require("./config/db");
 
-const authRoutes= require("./routes/authRoutes")
-const userRoutes= require("./routes/userRoutes")
-const taskRoutes= require("./routes/taskRoutes")
-const reportRoutes= require("./routes/reportRoutes")
+const authRoutes = require("./routes/authRoutes");
+const userRoutes = require("./routes/userRoutes");
+const taskRoutes = require("./routes/taskRoutes");
+const reportRoutes = require("./routes/reportRoutes");
 
-
-
-const app = express();
 // const authRoutes = require("./routes/auth");
 // const userRoutes = require("./routes/user");
 // const taskRoutes = require("./routes/task");
 // const reportRoutes = require("./routes/report");
 
 // const mongoose = require("mongoose");
-
-
 
 // middleware to handle CORS
 app.use(
